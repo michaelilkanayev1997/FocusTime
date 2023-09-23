@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { View, StyleSheet, Text, Vibration } from 'react-native';
-import { ProgressBar } from 'react-native-paper';
-import { useKeepAwake } from 'expo-keep-awake';
-import { Countdown } from '../components/Countdown';
-import { RoundedButton } from '../components/RoundedButton';
-import { spacing } from '../utils/sizes';
-import { colors } from '../utils/colors';
-import { Timing } from './Timing';
+import { useState } from "react";
+import { View, StyleSheet, Text, Vibration } from "react-native";
+import { ProgressBar } from "react-native-paper";
+import { useKeepAwake } from "expo-keep-awake";
+import { Countdown } from "../components/Countdown";
+import { RoundedButton } from "../components/RoundedButton";
+import { spacing } from "../utils/sizes";
+import { colors } from "../utils/colors";
+import { Timing } from "./Timing";
 
 const ONE_SECOND_IN_MS = 1000;
 
@@ -82,37 +82,37 @@ const styles = StyleSheet.create({
   },
   countdown: {
     flex: 0.5,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   timingWrapper: {
     flex: 0.1,
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingTop: spacing.xxl,
   },
   buttonWrapper: {
     flex: 0.3,
-    flexDirection: 'row',
+    flexDirection: "row",
     padding: spacing.md,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   clearSubjectWrapper: {
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
   },
   cancelButtonText: {
     fontSize: 18,
   },
   title: {
     color: colors.white,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    fontWeight: "bold",
+    textAlign: "center",
     fontSize: 25,
   },
   task: {
     color: colors.white,
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 20,
   },
 });
