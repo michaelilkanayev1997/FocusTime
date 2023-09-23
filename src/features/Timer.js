@@ -41,12 +41,12 @@ export const Timer = ({ focusSubject, clearSubject, onTimerEnd }) => {
           onProgress={setProgress}
           onEnd={onEnd}
         />
-        <View style={{ paddingTop: spacing.xxl }}>
+        <View style={{ paddingTop: spacing.sm }}>
           <Text style={styles.title}>Focusing on:</Text>
           <Text style={styles.task}>{focusSubject}</Text>
         </View>
       </View>
-      <View style={{ paddingTop: spacing.sm }}>
+      <View style={{ paddingTop: spacing.md }}>
         <ProgressBar
           progress={progress}
           color={colors.progressBar}
@@ -58,15 +58,23 @@ export const Timer = ({ focusSubject, clearSubject, onTimerEnd }) => {
       </View>
       <View style={styles.buttonWrapper}>
         {!isStarted && (
-          <RoundedButton title="start" onPress={() => setIsStarted(true)} />
+          <RoundedButton
+            size={120}
+            title="start"
+            onPress={() => setIsStarted(true)}
+          />
         )}
         {isStarted && (
-          <RoundedButton title="pause" onPress={() => setIsStarted(false)} />
+          <RoundedButton
+            size={120}
+            title="pause"
+            onPress={() => setIsStarted(false)}
+          />
         )}
       </View>
       <View style={styles.clearSubjectWrapper}>
         <RoundedButton
-          size={65}
+          size={60}
           title="Cancel"
           onPress={clearSubject}
           textStyle={styles.cancelButtonText}
@@ -84,11 +92,12 @@ const styles = StyleSheet.create({
     flex: 0.5,
     alignItems: "center",
     justifyContent: "center",
+    paddingTop: 25,
   },
   timingWrapper: {
-    flex: 0.1,
+    flex: 0.2,
     flexDirection: "row",
-    paddingTop: spacing.xxl,
+    paddingTop: spacing.lg,
   },
   buttonWrapper: {
     flex: 0.3,
