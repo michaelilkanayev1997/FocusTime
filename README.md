@@ -1,11 +1,31 @@
-# Sample Snack app
+# FocusTime
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+### `Pictures:`
+<img src="https://github.com/michaelilkanayev1997/FocusTime/assets/93651794/a36acb70-2039-4aaa-b225-2fcb06e1c826" width="20%" height="10%"  ></img> 
+<img src="https://github.com/michaelilkanayev1997/FocusTime/assets/93651794/4616a8a0-5e87-4a7d-a47d-a713a871eaee" width="20%" height="10%"  ></img> 
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Description
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+FocusTime is a React Native mobile application designed to help users concentrate on specific tasks for a set period. This app serves as a simple tool for focusing on tasks, notifying users upon completion, and managing completed tasks.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## Overview
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+This project represents my initial exploration into React Native development. FocusTime offers the following features:
+
+- **Focus Timer:** Allows users to set a specific duration to focus on a task.
+- **Task Completion:** Notifies users with a phone vibration upon task completion.
+- **Task Management:** Includes a list of completed tasks for reference.
+
+## Installation
+
+To run this app locally, follow these steps:
+
+1. Clone this repository.
+2. Install dependencies using `npm install` or `yarn install`.
+3. Run the app on a simulator or physical device using `npm start` or `yarn start`.
+
+## Acknowledgments
+
+Special thanks to the Complete React Native in 2023: Zero to Mastery (with Hooks) Course on Udemy for providing valuable guidance and insights in React Native development.
+
+
